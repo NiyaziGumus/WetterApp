@@ -59,7 +59,7 @@
   }
   
   #temperatur {
-    font-size: 2em; /* 32px */
+    font-size: 1.5  em; 
     margin-bottom: 10px;
   }
   
@@ -69,14 +69,14 @@
     margin-bottom: 10px;
   }
   
-  #wetterIcon {
-    font-size: 4em; /* 64px */
+ .icon {
+    font-size: ; 
     margin-bottom: 10px;
   }
   
   #luftfeuchtigkeit,
   #windgeschwindigkeit {
-    font-size: 1em; /* 16px */
+    font-size: 1em; 
     margin-bottom: 5px;
   }
   
