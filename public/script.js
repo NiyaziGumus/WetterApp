@@ -3,13 +3,20 @@ document.getElementById('searchBtn').addEventListener('click', function() {
     fetch(`/weather?city=${city}`)
         .then(response => response.json())
         .then(data => {
-            document.getElementById('temperatur').textContent = `Temperatur: ${data.main.temp} °C`;
-            document.getElementById('stadt').textContent = `Stadt: ${data.name}`;
-            document.getElementById('luftfeuchtigkeit').textContent = `Luftfeuchtigkeit: ${data.main.humidity}%`;
-            document.getElementById('windgeschwindigkeit').textContent = `Windgeschwindigkeit: ${data.wind.speed} km/h`;
+            document.getElementById('temperatur').textContent = `${data.main.temp} °C`;
+            document.getElementById('stadt').textContent = `${data.name}`;
+            document.getElementById('luftfeuchtigkeit').textContent = `${data.main.humidity}%`;
+            document.getElementById('windgeschwindigkeit').textContent = `${data.wind.speed} km/h`;
             const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
             document.getElementById('wetterIcon').src = iconUrl;
             document.getElementById('wetterIcon').style.display = "block";
+            document.getElementById('luftIcon').style.display = "block";
+            document.getElementById('windIcon').style.display = "block";
+            document.querySelectorAll('.unterInfos').forEach(function(element) {
+                element.style.display = 'flex';
+            });
+            
+
         })
         .catch(error => {
             console.error('Fehler beim Abrufen der Wetterdaten:', error);

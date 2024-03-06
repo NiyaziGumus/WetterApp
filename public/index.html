@@ -7,7 +7,9 @@
     <title>Wetter App</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,25 +21,28 @@
             <button id="searchBtn"><i class="fa fa-search"></i></button>
         </div>
 
-        <div class="icon">
-            <img id="wetterIcon" src="" width="100em">
+        <div class="wetterIcon">
+            <img id="wetterIcon" src="" alt="Icon">
         </div>
 
         <div id="temperatur"></div>
 
         <div id="stadt"></div>
 
-        
-
         <div class="infos">
-            <div class="wind">
-                <i class="fa-solid fa-wind"></i>
-                <p id="windgeschwindigkeit"></p>
-            </div>
             <div class="luft">
-                <i class="fa-solid fa-water"></i>
+                <i id="luftIcon" class="fa-solid fa-water icons"></i>
                 <p id="luftfeuchtigkeit"></p>
             </div>
+            <div class="wind">
+                <i id="windIcon" class="fa-solid fa-wind icons"></i>
+                <p id="windgeschwindigkeit"></p>
+
+            </div>
+        </div>
+        <div class="unterInfos">
+            <span>luftfeuchtigkeit</span>
+            <span>windgeschwindigkeit</span>
         </div>
     </div>
     <script src="script.js"></script>

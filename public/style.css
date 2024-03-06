@@ -1,82 +1,136 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #4e8c9e; 
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  #wetterApp {
-    width: 300px;
-    padding: 20px;
-    border-radius: 20px;
-    background: rgba(0, 0, 0, 0.2); 
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    position: relative;
-  }
-  
-  .search-box {
-    margin-bottom: 20px;
-    position: relative;
-  }
-  
-  #suchfeld {
-    width: 100%;
-    padding: 15px 50px 15px 15px; 
-    border-radius: 20px;
-    border: none;
-    outline: none;
-  }
-  
-  #searchBtn {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50px;
-    height: 46px;
-    border: none;
-    border-radius: 0 20px 20px 0; 
-    background-color: #2c3e50; 
-    color: white;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  #searchBtn .fa-search {
-    font-size: 20px;
-  }
-  
-  #temperatur {
-    font-size: 1.5  em; 
-    margin-bottom: 10px;
-  }
-  
- 
-  #stadt {
-    font-size: 1.5em; 
-    margin-bottom: 10px;
-  }
-  
- .icon {
-    font-size: ; 
-    margin-bottom: 10px;
-  }
-  
-  #luftfeuchtigkeit,
-  #windgeschwindigkeit {
-    font-size: 1em; 
-    margin-bottom: 5px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background-color: #4e8c9e;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#wetterApp {
+  width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: relative;
+}
+
+.search-box {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#suchfeld {
+  width: 100%;
+  padding: 15px 50px 15px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+}
+
+#searchBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 53px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  background-color: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+#searchBtn .fa-search {
+  font-size: 20px;
+}
+
+#temperatur {
+  font-size: 3em;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+
+
+#stadt {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.icon {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+#luftfeuchtigkeit,
+#windgeschwindigkeit {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.wetterIcon img {
+  display: none;
+  width: 100%;
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wind,
+.luft {
+  display: flex;
+  font-size: 1.5em;
+}
+
+.wind i,
+.luft i {
+  display: none;
+  margin-right: 5px;
+  font-size: 1.5em;
+}
+
+.wind p,
+.luft p {
+  margin-left: 6px;
+  padding-top: 5px;
+}
+
+.unterInfos {
+  justify-content: space-between;
+  font-size: .8em;
+  display: none;
+}
+
+.unterInfos span:first-child {
+  margin-left: 50px;
+}
+
+/* .unterInfos span:last-child{
+  margin-right: 30px;
+} */
