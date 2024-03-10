@@ -1,41 +1,61 @@
-# Wetter App
+# Weather App
 
-## Projektvorschau
-Hier ist eine Vorschau unserer Wetter App:
+## Project Preview
+Here is a preview of our Weather App:
 
-[![Wetter App Vorschau](https://github.com/NiyaziGumus/WetterApp/blob/main/Screenshot.png)]
+![Weather App Preview](https://github.com/NiyaziGumus/WetterApp/blob/main/public/img/Screenshot.png?raw=true)
 
-## Über das Projekt
+## About the Project
 
-Diese Wetter App ermöglicht es den Benutzern, Echtzeit-Wetterinformationen für jede Stadt abzurufen. Es wurde entwickelt, um meine Fähigkeiten in der Full-Stack-Webentwicklung zu demonstrieren, mit einem Fokus auf die Integration von externen APIs und die Verwendung von Node.js für den Backend-Service. Das Ziel war es, eine interaktive und benutzerfreundliche Anwendung zu erstellen, die dynamisch Wetterdaten anzeigt.
+This Weather App allows users to fetch real-time weather information for any city. It was developed to demonstrate my full-stack web development skills, with a focus on integrating external APIs and utilizing Node.js for the backend service. The goal was to create an interactive and user-friendly application that dynamically displays weather data.
 
-## Technologien
+## Technologies
 
-Das Projekt verwendet die folgenden Technologien:
+The project uses the following technologies:
 
-- **HTML5**: Für die Strukturierung der Webanwendung.
-- **CSS3**: Für Styling und Erstellung eines responsiven Designs.
-- **JavaScript**: Für dynamische Interaktivitäten auf der Client-Seite.
-- **Node.js**: Als Ausführungsumgebung für den Backend-Service.
-- **Express.js**: Ein Webanwendungsframework für Node.js, verwendet, um API-Anfragen zu handhaben.
-- **OpenWeatherMap API**: Für den Abruf von Echtzeit-Wetterdaten.
+- **HTML5**: For structuring the web application.
+- **CSS3**: For styling and creating a responsive design.
+- **JavaScript**: For dynamic interactions on the client side.
+- **Node.js**: As the runtime environment for the backend service.
+- **Express.js**: A web application framework for Node.js, used to handle API requests.
+- **OpenWeatherMap API**: For fetching real-time weather data.
 
-## Funktionen
+## Obtaining Your OpenWeatherMap API Key
 
-- **Stadtsuche**: Benutzer können nach einer Stadt suchen, um die aktuellen Wetterinformationen anzuzeigen.
-- **Anzeige von Wetterdaten**: Zeigt Temperatur, Windgeschwindigkeit, Luftfeuchtigkeit und mehr basierend auf der Suche.
-- **Dynamische Wettericons**: Icons, die das aktuelle Wetter visuell darstellen, werden basierend auf den API-Daten angezeigt.
-- **Responsive Design**: Die Anwendung ist voll responsiv und bietet ein optimales Benutzererlebnis auf Desktop- und Mobilgeräten.
+To use this Weather App, you will need to obtain your own API key from OpenWeatherMap:
 
-## Nutzung
+1. Visit [OpenWeatherMap's website](https://openweathermap.org/) and sign up for an account.
+2. Once logged in, navigate to the 'API keys' tab and generate a new API key.
+3. Copy your API key and place it in the application's configuration file or environment variable as appropriate.
 
-Um das Projekt lokal auszuführen, folgen Sie diesen Schritten:
+## Configuring Your API Key in the Application
 
-1. Klonen Sie das Repository auf Ihren Computer.
-2. Führen Sie `npm install` aus, um die erforderlichen Pakete zu installieren.
-3. Starten Sie den Server mit `node index.js`.
-4. Öffnen Sie `http://localhost:3000` in Ihrem Browser, um die Anwendung zu verwenden.
+After obtaining your API key, you need to configure the application to use it. For this project, you can set the API key in an environment variable named `OPENWEATHER_API_KEY`:
 
-## Lizenz
+- If you are running the application locally, you can set this environment variable in your operating system, or use a `.env` file at the root of the project with the following content:
 
-Dieses Projekt ist unter der MIT-Lizenz Open-Source und erlaubt uneingeschränkte Nutzung, Modifikation und Verbreitung.
+    ```
+    OPENWEATHER_API_KEY=your_api_key_here
+    ```
+
+- Make sure to replace `your_api_key_here` with your actual OpenWeatherMap API key.
+
+## Features
+
+- **City Search**: Users can search for a city to display current weather information.
+- **Display of Weather Data**: Shows temperature, wind speed, humidity, and more based on the search.
+- **Dynamic Weather Icons**: Icons visually representing the current weather are displayed based on the API data.
+- **Responsive Design**: The application is fully responsive, providing an optimal user experience on both desktop and mobile devices.
+
+## Usage
+
+To run the project locally, follow these steps:
+
+1. Clone the repository to your computer.
+2. Run `npm install` to install the required packages.
+3. Start the server with `node index.js`.
+4. Open `http://localhost:3000` in your browser to use the application.
+
+## License
+
+This project is open-sourced under the MIT license, allowing for unrestricted use, modification, and distribution.
