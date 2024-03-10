@@ -3,7 +3,7 @@
 ## Projektvorschau
 Hier ist eine Vorschau unserer Wetter App:
 
-[![Wetter App Vorschau](https://github.com/NiyaziGumus/WetterApp/blob/main/Screenshot.png)]
+[[![Wetter App Vorschau](https://github.com/NiyaziGumus/WetterApp/blob/main/Screenshot.png)]](https://github.com/NiyaziGumus/WetterApp/blob/main/public/img/Screenshot.png)
 
 ## Über das Projekt
 
